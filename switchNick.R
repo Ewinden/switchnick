@@ -5,6 +5,8 @@ library("crisprBwa")
 library("dplyr")
 
 dna <- readDNAStringSet("/home/files/168H2and746H13.txt")
+fnm <- file.choose()
+dna <- readDNAStringSet(fnm)
 lowlen <- 10
 highlen <- 14
 lowmt <- 45
